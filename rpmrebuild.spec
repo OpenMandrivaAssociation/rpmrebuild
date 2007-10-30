@@ -1,5 +1,5 @@
 Name:           rpmrebuild
-Version:        2.2.0
+Version:        2.2.0.1
 Release:        %mkrel 1
 Epoch:          1
 Summary:        Tool to build an RPM file from the RPM database
