@@ -9,6 +9,7 @@ URL:            http://rpmrebuild.sourceforge.net/
 Source0:        http://easynews.dl.sourceforge.net/sourceforge/rpmrebuild/rpmrebuild-2.2.0-1.tar.gz
 Requires:       rpm-build
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 rpmrebuild allows for the building of an RPM file from an installed RPM
