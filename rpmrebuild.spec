@@ -1,12 +1,12 @@
 Name:           rpmrebuild
-Version:        2.2.0.1
+Version:        2.2.1.1
 Release:        %mkrel 1
 Epoch:          1
 Summary:        Tool to build an RPM file from the RPM database
 Group:          System/Configuration/Packaging
 License:        GPL
 URL:            http://rpmrebuild.sourceforge.net/
-Source0:        http://easynews.dl.sourceforge.net/sourceforge/rpmrebuild/rpmrebuild-2.2.0-1.tar.gz
+Source0:        http://downloads.sourceforge.net/sourceforge/rpmrebuild/rpmrebuild-2.2.1-1.tar.gz
 Requires:       rpm-build
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
@@ -52,16 +52,21 @@ change.
 %doc AUTHORS Changelog COPYING COPYRIGHT LISEZ.MOI News README Release rpmrebuild.lsm Todo Version
 %attr(0755,root,root) %{_bindir}/rpmrebuild
 %{_mandir}/man1/demo.plug.1rrp*
+%{_mandir}/man1/demofiles.plug.1rrp*
 %{_mandir}/man1/file2pacDep.plug.1rrp*
 %{_mandir}/man1/nodoc.plug.1rrp*
 %{_mandir}/man1/rpmrebuild.1*
 %{_mandir}/man1/rpmrebuild_plugins.1*
+%{_mandir}/man1/set_tag.plug.1rrp*
 %{_mandir}/man1/uniq.plug.1rrp*
-%lang(fr) %{_mandir}/fr/man1/demo.plug.1rrp*
-%lang(fr) %{_mandir}/fr/man1/file2pacDep.plug.1rrp*
-%lang(fr) %{_mandir}/fr/man1/nodoc.plug.1rrp*
-%lang(fr) %{_mandir}/fr/man1/rpmrebuild.1*
-%lang(fr) %{_mandir}/fr/man1/rpmrebuild_plugins.1*
-%lang(fr) %{_mandir}/fr/man1/uniq.plug.1rrp*
+%lang(fr) %{_mandir}/fr*/man1/demo.plug.1rrp*
+%lang(fr) %{_mandir}/fr*/man1/demofiles.plug.1rrp*
+%lang(fr) %{_mandir}/fr*/man1/file2pacDep.plug.1rrp*
+%lang(fr) %{_mandir}/fr*/man1/nodoc.plug.1rrp*
+%lang(fr) %{_mandir}/fr*/man1/rpmrebuild.1*
+%lang(fr) %{_mandir}/fr*/man1/rpmrebuild_plugins.1*
+%lang(fr) %{_mandir}/fr*/man1/set_tag.plug.1rrp*
+%lang(fr) %{_mandir}/fr*/man1/uniq.plug.1rrp*
+
 %defattr(-,root,root,0755)
 %{_datadir}/rpmrebuild
