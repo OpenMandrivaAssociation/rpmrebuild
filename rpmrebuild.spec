@@ -1,12 +1,12 @@
 Name:           rpmrebuild
-Version:        2.2.2.1
+Version:        2.2.3
 Release:        %mkrel 1
 Epoch:          1
 Summary:        Tool to build an RPM file from the RPM database
 Group:          System/Configuration/Packaging
-License:        GPL
+License:        GPLv2+
 URL:            http://rpmrebuild.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/sourceforge/rpmrebuild/rpmrebuild-2.2.2.tar.gz
+Source0:        http://downloads.sourceforge.net/sourceforge/rpmrebuild/rpmrebuild-%version.tar.gz
 Requires:       rpm-build
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
