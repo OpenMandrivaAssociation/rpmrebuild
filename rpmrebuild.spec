@@ -70,3 +70,52 @@ change.
 
 %defattr(-,root,root,0755)
 %{_datadir}/rpmrebuild
+
+
+%changelog
+* Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 1:2.2.3-3mdv2010.0
++ Revision: 433454
+- rebuild
+
+* Fri Aug 08 2008 Thierry Vignaud <tvignaud@mandriva.com> 1:2.2.3-2mdv2009.0
++ Revision: 269222
+- rebuild early 2009.0 package (before pixel changes)
+
+* Thu Aug 07 2008 Funda Wang <fundawang@mandriva.org> 1:2.2.3-1mdv2009.0
++ Revision: 266474
+- New version 2.2.3
+
+* Wed Apr 30 2008 David Walluck <walluck@mandriva.org> 1:2.2.2.1-1mdv2009.0
++ Revision: 199624
+- 2.2.2 (2.2.2-1)
+
+* Mon Apr 21 2008 David Walluck <walluck@mandriva.org> 1:2.2.1.1-1mdv2009.0
++ Revision: 196033
+- 2.2.1-1
+- remove old source
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Tue Oct 30 2007 David Walluck <walluck@mandriva.org> 1:2.2.0.1-1mdv2008.1
++ Revision: 103980
+- bump version
+- bump version
+
+* Thu Oct 25 2007 David Walluck <walluck@mandriva.org> 1:2.2.0-1mdv2008.1
++ Revision: 102120
+- 2.2.0 (2.4 was 2.0.4)
+
+
+* Thu Jan 25 2007 David Walluck <walluck@mandriva.org> 2.4-1mdv2007.0
++ Revision: 113074
+- fix install location
+  fix some rpmlint warnings
+- Import rpmrebuild
+
+* Wed Jan 24 2007 David Walluck <walluck@mandriva.org> 0:2.4-1mdv2007.1
+- release
+
