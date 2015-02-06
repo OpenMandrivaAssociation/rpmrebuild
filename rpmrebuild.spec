@@ -1,6 +1,6 @@
 Name:           rpmrebuild
 Version:        2.2.3
-Release:        %mkrel 3
+Release:        4
 Epoch:          1
 Summary:        Tool to build an RPM file from the RPM database
 Group:          System/Configuration/Packaging
