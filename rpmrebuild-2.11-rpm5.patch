@@ -1,0 +1,24 @@
+diff -Naur a/rpmrebuild_rpmqf.src b/rpmrebuild_rpmqf.src
+--- a/rpmrebuild_rpmqf.src	2013-07-27 19:52:08.000000000 +0400
++++ b/rpmrebuild_rpmqf.src	2015-04-30 12:31:10.000000000 +0300
+@@ -45,7 +45,7 @@
+ %|SIZE?{[#SIZE:           %{SIZE}]}|\
+ %|ARCHIVESIZE?{[#ARCHIVESIZE:           %{ARCHIVESIZE}]}|\
+ %|ARCH?{[#ARCH:         %{ARCH}]}:{#ARCH:        noarch}|\
+-%|ARCH?{[BuildArch:     %{ARCH}]}:{BuildArch:    noarch}|\
++%|ARCH?{[#BuildArch:    %{ARCH}]}:{BuildArch:    noarch}|\
+ %|NAME?{[Name:          %{NAME}]}|\
+ %|VERSION?{[Version:       %{VERSION}]}|\
+ %|RELEASE?{[Release:       %{RELEASE}]}|\
+diff -Naur a/rpmrebuild.sh b/rpmrebuild.sh
+--- a/rpmrebuild.sh	2013-08-23 10:55:34.000000000 +0400
++++ b/rpmrebuild.sh	2015-04-30 12:31:52.000000000 +0300
+@@ -196,7 +196,7 @@
+ function RpmFileName
+ {
+ 	QF_RPMFILENAME=$(eval $change_arch rpm $rpm_defines --eval %_rpmfilename) || return
+-	RPMFILENAME=$(eval $change_arch rpm $rpm_defines --specfile --query --queryformat "${QF_RPMFILENAME}" ${FIC_SPEC}) || return
++	RPMFILENAME=$(eval $change_arch rpm $rpm_defines --specfile --query --queryformat \"${QF_RPMFILENAME}\" ${FIC_SPEC}) || return
+ 	# workarount for redhat 6.x
+ 	arch=$(eval $change_arch rpm $rpm_defines --specfile --query --queryformat "%{ARCH}"  ${FIC_SPEC})
+ 	if [ $arch = "(none)" ]

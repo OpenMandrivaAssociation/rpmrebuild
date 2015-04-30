@@ -1,2 +1,4 @@
+removed_sources:
+  rpmrebuild-2.2.3.tar.gz: 46a36f4867c1d32b46186f97d4443920fd3d4da2
 sources:
-  "rpmrebuild-2.2.3.tar.gz": 46a36f4867c1d32b46186f97d4443920fd3d4da2
+  rpmrebuild-2.11.tar.gz: 7b56a742de0276f6a3bff82f77f26bfc7627f518
