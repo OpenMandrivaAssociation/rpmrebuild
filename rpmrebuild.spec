@@ -5,7 +5,7 @@ Epoch:          1
 Summary:        Tool to build an RPM file from the RPM database
 Group:          System/Configuration/Packaging
 License:        GPLv2+
-URL:            http://rpmrebuild.sourceforge.net/
+URL:            https://rpmrebuild.sourceforge.net/
 Source0:        http://downloads.sourceforge.net/sourceforge/rpmrebuild/rpmrebuild-%{version}.tar.gz
 Patch0:		rpmrebuild-2.11-rpm5.patch
 Requires:       rpm-build
