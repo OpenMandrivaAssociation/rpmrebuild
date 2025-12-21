@@ -11,6 +11,7 @@ Patch0:		rpmrebuild-2.11-rpm5.patch
 Requires:       rpm-build
 BuildArch:      noarch
 
+BuildRequires:	make
 %description
 rpmrebuild allows for the building of an RPM file from an installed RPM
 or from another RPM file with or without changes (batch or interactive).
